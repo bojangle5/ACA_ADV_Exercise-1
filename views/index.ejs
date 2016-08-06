@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Express Yourself</title>
+</head>
+<body>
+  <section>
+    <img src="<%= ghAvatar %>" />
+    <p><%= blurb %></p>
+  </section>
+  <section>
+    <h3>Things Im working on:</h3>
+    <ul>
+      <% skills.forEach(function(skill){ %>
+        <li> <%= skill %> </li>
+      <% }) %>
+    </ul>
+    <h3>My hobbies are:</h3>
+    <ul>
+      <% hobbies.forEach(function(hobby){ %>
+        <li> <%= hobby %> </li>
+      <% }) %>
+    </ul>
+  </section>
+</body>
+</html>
